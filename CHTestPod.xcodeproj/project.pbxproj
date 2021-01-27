@@ -16,6 +16,7 @@
 		1820B1C125C136F10053932B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1820B1BF25C136F10053932B /* Main.storyboard */; };
 		1820B1C325C136F60053932B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1820B1C225C136F60053932B /* Assets.xcassets */; };
 		1820B1C625C136F60053932B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1820B1C425C136F60053932B /* LaunchScreen.storyboard */; };
+		1820B1CF25C1388F0053932B /* PodTestFileSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1820B1CE25C1388F0053932B /* PodTestFileSwift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		1820B1C225C136F60053932B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1820B1C525C136F60053932B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1820B1C725C136F60053932B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1820B1CE25C1388F0053932B /* PodTestFileSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodTestFileSwift.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		1820B18D25C136360053932B = {
 			isa = PBXGroup;
 			children = (
+				1820B1CE25C1388F0053932B /* PodTestFileSwift.swift */,
 				1820B19925C136360053932B /* CHTestPod */,
 				1820B1A425C136370053932B /* CHTestPodTests */,
 				1820B1B825C136F10053932B /* CHTestPodExample */,
@@ -201,6 +204,7 @@
 				TargetAttributes = {
 					1820B19625C136360053932B = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 					};
 					1820B19F25C136370053932B = {
 						CreatedOnToolsVersion = 12.3;
@@ -262,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1820B1CF25C1388F0053932B /* PodTestFileSwift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +443,7 @@
 		1820B1AC25C136370053932B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = X88R95TE95;
@@ -454,6 +460,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.CHTestPod;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -462,6 +469,7 @@
 		1820B1AD25C136370053932B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = X88R95TE95;
@@ -486,6 +494,7 @@
 		1820B1AF25C136370053932B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X88R95TE95;
 				INFOPLIST_FILE = CHTestPodTests/Info.plist;
@@ -504,6 +513,7 @@
 		1820B1B025C136370053932B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X88R95TE95;
 				INFOPLIST_FILE = CHTestPodTests/Info.plist;
